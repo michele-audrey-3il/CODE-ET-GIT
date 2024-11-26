@@ -4,8 +4,7 @@ public class StockManager {
     public void gererStock(String typeOperation, String produit, int quantite, int stock) {
         // Ajout au stock
         if (typeOperation.equals("ajout")) {
-            stock += quantite;
-            System.out.println("Produit : " + produit + ", Stock après ajout : " + stock);
+            
         // Retrait du stock
         } else if (typeOperation.equals("retrait")) {
             if (stock >= quantite) {
@@ -19,4 +18,14 @@ public class StockManager {
             System.out.println("Opération inconnue.");
         }
     }
+
+    public int calculerQuantite(int quantite, int stock)
+    {
+        stock += quantite;
+        System.out.println("Produit : " + produit + ", Stock après ajout : " + stock);
+    }
+    return quantite;
 }
+/**
+ * @param calculerQuantite
+ */
